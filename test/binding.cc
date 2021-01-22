@@ -18,6 +18,7 @@ Object InitBasicTypesArray(Env env);
 Object InitBasicTypesBoolean(Env env);
 Object InitBasicTypesNumber(Env env);
 Object InitBasicTypesValue(Env env);
+Object InitBasicTypesString(Env env);
 #if (NAPI_VERSION > 5)
 Object InitBigInt(Env env);
 #endif
@@ -83,6 +84,7 @@ Object Init(Env env, Object exports) {
   exports.Set("basic_types_boolean", InitBasicTypesBoolean(env));
   exports.Set("basic_types_number", InitBasicTypesNumber(env));
   exports.Set("basic_types_value", InitBasicTypesValue(env));
+  exports.Set("basic_types_string", InitBasicTypesString(env));
 #if (NAPI_VERSION > 5)
   exports.Set("bigint", InitBigInt(env));
 #endif

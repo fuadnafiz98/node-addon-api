@@ -14,6 +14,7 @@
         'basic_types/boolean.cc',
         'basic_types/number.cc',
         'basic_types/value.cc',
+        'basic_types/string.cc',
         'bigint.cc',
         'date.cc',
         'binding.cc',
